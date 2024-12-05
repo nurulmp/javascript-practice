@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const Liton = {
+        firstName: "Nurul",
+        lastName: "Liton",
+        birthYear: 1991,
+        job: "Developer",
+        friends: ["rajjak.abid,mehdi"],
+        colAge: function () {
+          this.age = 2037 - this.birthYear;
+          return this.age;
+        },
+        getSummary: function () {
+          return `${this.firstName} is a ${this.job}`;
+        },
+      };
+      console.log(Liton.colAge());
+      console.log(Liton.getSummary());
+    </script>
+  </body>
+</html>
